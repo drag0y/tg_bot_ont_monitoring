@@ -86,7 +86,7 @@ async def menu_cmd(message: types.Message):
                 await message.answer(f"Неправильный Мак или Серийник ONU!")
 
 
-        except UnboundLocalError:
+        except AttributeError:
             await message.answer(f"ONU {usermaconu} не найдена!")
         except IndexError:
             await message.answer("Ошибка синтаксиса!")
@@ -125,7 +125,7 @@ async def menu_cmd(message: types.Message):
                 await message.answer(f"Неправильный Мак или Серийник ONU!")
 
 
-        except UnboundLocalError:
+        except AttributeError:
             await message.answer(f"ONU {usermaconu} не найдена!")
         except IndexError:
             await message.answer("Ошибка синтаксиса!")
@@ -163,7 +163,7 @@ async def menu_cmd(message: types.Message):
                 await message.answer("Неправильный Мак или Серийник ONU!")
 
 
-        except UnboundLocalError:
+        except AttributeError:
             await message.answer(f"ONU {usermaconu} не найдена!")
         except IndexError:
             await message.answer("Ошибка синтаксиса!")
