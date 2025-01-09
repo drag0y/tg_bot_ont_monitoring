@@ -72,14 +72,14 @@ async def menu_cmd(message: types.Message):
             if len(usermaconu) == 12:
                 await message.answer(f"Ищем ONU с маком {usermaconu}")
                 get_tree_level = FindOnu(usermaconu, "epon", snmp_com, pathdb)
-                out_tree_level = get_tree_level.surveytree()
+                out_tree_level = get_tree_level.surveytreelevel()
                 await message.answer(f"{out_tree_level}")
 
     
             elif len(usersnonu) == 16:
                 await message.answer(f"Ищем ONU с серийником {usersnonu}")
                 get_tree_level = FindOnu(usermaconu, "gpon", snmp_com, pathdb)
-                out_tree_level = get_tree_level.surveytree()
+                out_tree_level = get_tree_level.surveytreelevel()
                 await message.answer(f"{out_tree_level}")
 
             else:
