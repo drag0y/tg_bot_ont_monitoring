@@ -4,7 +4,7 @@ from aiogram.filters import CommandStart, Command
 from onu.findonu import FindOnu
 from configurations.tgbotconf import USERS, pathdb, snmp_com # Access permit of Users
 from handlers.getoltlist import get_netbox_olt_list # function to get olt list and call function to get onu list
-
+#from handlers.not_netbox import get_netbox_olt_list
 
 user_private_router = Router()
 

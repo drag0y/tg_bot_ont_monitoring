@@ -1,6 +1,25 @@
+#
+*.un~
+
+#
 /*.pyc
 /*.swp
 
+# Environments
+.env
+
+#
+__pycache__/
+
+#
 .idea/
 
+#
+configurations/nb_conf.py
+configurations/tgbotconf.py
+
+#
+onulist.db
+
+#
 pyvenv.cfg

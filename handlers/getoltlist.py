@@ -4,7 +4,7 @@ import ipaddress
 import sqlite3
 
 from pon.work_db import WorkDB
-from configurations.tgbotconf import pathdb
+from configurations.tgbotconf import pathdb, snmp_com
 from pon.huawei_olt import HuaweiGetOltInfo
 from configurations.nb_conf import urlgetepon, urlgetgpon, epon_tag, gpon_tag, headers
 
@@ -18,9 +18,6 @@ def get_netbox_olt_list():
 
     epon = "epon"
     gpon = "gpon"
-
-# --- SNMP community
-    snmp_com = "Ciscoread1!"
 
 
     # --- Создание базы, если база существует, то старая удаляется
